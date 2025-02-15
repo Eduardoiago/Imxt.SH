@@ -6,7 +6,7 @@
 [ $UID -ne '0' ] && { echo "ERRO: Necessário ter acesso root."; exit 1 ;}
 
 usage() {
-	echo " "
+    echo " "
     echo "                            ░▀█▀░█▄█░█░█░▀█▀"
     echo "                            ░░█░░█░█░▄▀▄░░█░"
     echo "                            ░▀▀▀░▀░▀░▀░▀░░▀░"
@@ -17,7 +17,7 @@ usage() {
     echo "  -x <imagem> <senha>                  Extrai o texto oculto da imagem"
     echo "  -c <imagem>                          Verifica se há mensagem oculta na imagem"
     echo "  -i                                   Exibe algoritmos e modos suportados"
-	echo "  -h                                   Uso"
+    echo "  -h                                   Uso"
     exit 1
 }
 
@@ -30,7 +30,6 @@ if ! command -v steghide &> /dev/null; then
     exit 1
 fi
 
-# Parâmetros
 while getopts ":e:x:c:ih" opt; do
     case ${opt} in
         e)
