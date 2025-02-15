@@ -6,12 +6,13 @@
 [ $UID -ne '0' ] && { echo "ERRO: Necessário ter acesso root."; exit 1 ;}
 
 usage() {
+	echo " "
     echo "                            ░▀█▀░█▄█░█░█░▀█▀"
     echo "                            ░░█░░█░█░▄▀▄░░█░"
     echo "                            ░▀▀▀░▀░▀░▀░▀░░▀░"
-    echo ""
+    echo " "
     echo " Uso: imxt.sh [opção] [argumentos]"
-    echo "\nOpções:"
+    echo " Opções:"
     echo "  -e <imagem> <mensagem.txt> <senha>   Esconde o texto dentro da imagem"
     echo "  -x <imagem> <senha>                  Extrai o texto oculto da imagem"
     echo "  -c <imagem>                          Verifica se há mensagem oculta na imagem"
