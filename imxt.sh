@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# IMXT 1.0
+# IMXT 1.0 (c) 2025
 # Script para otimizar uso da ferramenta steghide.
 
 [ $UID -ne '0' ] && { echo -e "\e[1;31mE:\e[0m Necessário ter acesso root."; exit 1 ;}
